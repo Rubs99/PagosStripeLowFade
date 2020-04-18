@@ -3,6 +3,7 @@ require('./config/config');
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const stripe =require('stripe')('sk_test_gnRYNEVTe3bRdSN3mOV1yPaa00gWoK7qNG');
 
 const app = express();
 

@@ -21,6 +21,11 @@ clientController.getClients = async (req, res) => {
     }
 }
 
+clientController.getClient = async(req, res) => {
+    const client = await User.findById(req.params.id);
+    res.json(client);
+};
+
 clientController.editClient = async (req, res) => {
     try {
 

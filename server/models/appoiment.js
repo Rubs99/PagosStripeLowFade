@@ -7,8 +7,7 @@ const appoimentSchema= new Schema({
     employeeId:{type: Schema.ObjectId, ref: "User" },
     clientId:{type:Schema.ObjectId,ref:"User"},
     serviceId: {type: Schema.ObjectId, ref: "Service"},
-    date:{type:Date},
-   
+    dateTime:{type:Date},
     created_at:{type:Date,default: Date.now(),required:true}
 });
 
